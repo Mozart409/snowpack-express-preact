@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "server": "nodemon ./server.js",
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.jsx\"",
@@ -7,6 +8,7 @@
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
+    "express": "^4.17.1",
     "preact": "^10.0.0"
   },
   "devDependencies": {
@@ -16,6 +18,7 @@
     "@testing-library/preact": "^2.0.0",
     "@web/test-runner": "^0.10.0",
     "chai": "^4.2.0",
+    "nodemon": "^2.0.6",
     "prettier": "^2.0.5",
     "snowpack": "^2.18.4"
   }
